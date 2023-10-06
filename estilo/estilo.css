@@ -56,7 +56,7 @@
     }
 
     .nav-items-mobile{
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-around;
         position: absolute;

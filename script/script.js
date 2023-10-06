@@ -1,4 +1,5 @@
-$(document).ready(function(){
-    
+$(".mobile-btn").click(function(){
+    $(".nav-items-mobile").slideToggle();
 });
+
     

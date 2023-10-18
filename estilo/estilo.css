@@ -81,12 +81,15 @@
 .slogan{
     width: 100%;
     position: relative;
+    display: flex;
+    overflow-x: scroll;
 }
 
 .slogan-container{
     width: 100%;
     height: 100%;
     position: relative;
+    flex: none;
 }
 
 .slogan .slogan-container img{

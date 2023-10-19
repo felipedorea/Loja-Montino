@@ -1,3 +1,5 @@
+
+
 $(".mobile-btn").click(function(){
     $(".nav-items-mobile").slideToggle();
     $(".nav-items-mobile").css("display", "flex");   
@@ -25,6 +27,8 @@ $("#construcao").hover(function(){
 }, function(){
     $("#construcao-titulo").css("opacity", "0")
     $("#construcao-img").css("filter", "blur()")
-})
+});
+
+
 
     

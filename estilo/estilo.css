@@ -93,11 +93,34 @@ font-family: 'Poppins', sans-serif;
     border-radius: 10px;
 }
 
-.orcamento{
+#orcamento{
     background-color: yellow;
     padding: 8px;
     border-radius: 10px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+#orcamento:hover{
+    animation: orcamento-hover infinite 2s;
+}
+
+@keyframes orcamento-hover {
+    0%{
+        background-color: yellow;
+    }
+
+    50%{
+        background-color: green;
+        background-position: 10%;
+        color: white;
+    }
+
+    100%{
+        background-color: yellow;
+        background-position: 10%;
+        color: black;
+    }
 }
 
 .menu-header-mobile{
@@ -148,12 +171,28 @@ font-family: 'Poppins', sans-serif;
         left: 0%;
     }
 
+    10%{
+        left: 0%;
+    }
+
     25%{
+        left: -100%;
+    }
+
+    35%{
         left: -100%;
     }
 
     50%{
         left: -200%;
+    }
+
+    60%{
+        left: -200%;
+    }
+
+    90%{
+        left: -300%;
     }
 
     100%{

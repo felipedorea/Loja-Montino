@@ -19,7 +19,7 @@ $("#hidraulico").hover(function(){
 }, function(){
     $("#hidraulico-titulo").css("opacity", "0")
     $("#hidraulico-img").css("filter", "blur()")
-})
+});
 
 $("#construcao").hover(function(){
     $("#construcao-titulo").css("opacity", "1");
@@ -28,6 +28,7 @@ $("#construcao").hover(function(){
     $("#construcao-titulo").css("opacity", "0")
     $("#construcao-img").css("filter", "blur()")
 });
+
 
 
 

@@ -125,6 +125,7 @@ font-family: 'Poppins', sans-serif;
     width: 90%;
     display: flex;
     margin: 0 auto;
+    position: relative;
 }
 
 .hundred{
@@ -164,7 +165,6 @@ font-family: 'Poppins', sans-serif;
 .slogan .hundred .slogan-container img{
     width: 100%;
     max-height: 600px;
-    background-color: rgba(0, 0, 0, 0.61);
 }
 
 .slogan .hundred .slogan-container .texto-slogan{
@@ -179,35 +179,37 @@ font-family: 'Poppins', sans-serif;
 }
 
 .slogan .hundred .slogan-container .texto-slogan h1{
-    font-size: 30px;
+    font-size: 40px;
     color: #fff;
     text-transform: uppercase;
+    text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.445);
 }
 
 .slogan .hundred .slogan-container .texto-slogan p{
     text-align: center;
     color: #fff;
     width: 100%;
-    font-size: 18px;
+    font-size: 20px;
+    text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.445);
 }
 
 .slogan .hundred .slogan-container .texto-slogan .link-slogan{
     padding: 5px 10px;
     color: white;
     background-color: green;
-    border: 1px solid white;
     font-size: 18px;
     text-decoration: none;
     cursor: pointer;
     border-radius: 10px;
     transition: all .3s;
     font-weight: bold;
+    box-shadow: 2px 3px 8px rgba(1, 201, 1, 0.534);
 }
 
 .slogan .hundred .slogan-container .texto-slogan .link-slogan:hover{
-    transform: scale(1.05);
     background-color: yellow;
     color: black;
+    box-shadow: 2px 3px 8px rgba(255, 255, 0, 0.534);
 }
 
 .titulo-padrao{

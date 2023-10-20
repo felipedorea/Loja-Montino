@@ -392,8 +392,24 @@ font-family: 'Poppins', sans-serif;
 }
 
 .promocoes-semana .caixas .link-compra:hover{
-    background-color: yellow;
-    color: black;
+    animation: compra-link infinite 2s;
+}
+
+@keyframes compra-link {
+    0%{
+        background-color: green;
+        color: white;
+    }
+
+    50%{
+        background-color: yellow;
+        color: black;
+    }
+
+    100%{
+        background-color: green;
+        color: white;
+    }
 }
 
 

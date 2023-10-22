@@ -154,6 +154,7 @@ font-family: 'Poppins', sans-serif;
 .banner{
     width: 90%;
     margin: 0 auto;
+    position: relative;
 }
 
 .banner img{
@@ -438,8 +439,12 @@ font-family: 'Poppins', sans-serif;
 
 .footer{
     background-color: rgba(216, 216, 216, 0.199);
+    width: 100%;
+}
+
+.footer .up-footer{
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-around;
     padding: 30px 10px;
 }
@@ -484,6 +489,14 @@ font-family: 'Poppins', sans-serif;
 .footer .localizacao .mapa-footer{
     width: 100%;
     height: 200px;
+}
+
+.footer .down-footer{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: #fff;
+    padding: 5px 0px;
 }
 
 
@@ -571,7 +584,7 @@ font-family: 'Poppins', sans-serif;
         font-size: 15px;
     }
 
-    .footer{
+    .footer .up-footer{
         flex-direction: column;
         justify-content: center;
     }
@@ -581,3 +594,59 @@ font-family: 'Poppins', sans-serif;
         margin-bottom: 25px;
     }
 }
+
+
+/* ABOUT PAGE */
+
+.banner .nav-banner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.banner .nav-banner p::selection,
+.banner .nav-banner p a::selection,
+.banner .nav-banner h1::selection,
+.banner .nav-banner p span::selection{
+    background-color: red;
+    color: white;
+}
+
+.banner .nav-banner h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.banner .nav-banner h1::before, 
+.banner .nav-banner h1::after{
+    content: " - ";
+    color: red;
+}
+
+.banner .nav-banner p{
+    color: #8b8b8bb6;
+    font-style: italic;
+}
+
+.banner .nav-banner p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.banner .nav-banner p a:hover{
+    color: red;
+}
+
+.banner .nav-banner p span{
+    color: red;
+    font-weight: bolder;
+}
+
+/* ABOUT PAGE END */
+

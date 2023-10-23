@@ -558,10 +558,11 @@ font-family: 'Poppins', sans-serif;
 .about .container_about{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     background-color: whitesmoke;
     padding: 50px 15px;
+    gap: 2%;
 }
 
 .about .container_about .imgabout{

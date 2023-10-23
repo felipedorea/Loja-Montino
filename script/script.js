@@ -1,6 +1,7 @@
 $(".mobile-btn").click(function(){
     $(".nav-items-mobile").slideToggle();
-    $(".nav-items-mobile").css("display", "flex");   
+    $(".nav-items-mobile").css("display", "flex");
+    $(".fa-bars").toggleClass("fa-xmark");
 });
 
 $("#eletrico").hover(function(){

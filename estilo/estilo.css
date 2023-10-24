@@ -310,6 +310,19 @@ font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
 }
 
+.link-catalogo{
+    background-color: #02b502;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-catalogo:hover{
+    animation: link-compra infinite 2s;
+}
+
 .categorias .caixas{
     max-width: 300px;
     height: 300px;

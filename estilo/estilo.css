@@ -285,17 +285,33 @@ font-family: 'Poppins', sans-serif;
 }
 
 .conteudo-section{
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-section .caixas-categ{
+    padding: 30px 0px 10px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3%;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.caixas-promocoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin: 15px 0;
 }
 
 .categorias .caixas{
-    max-width: 280px;
-    height: 280px;
+    max-width: 300px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     margin-bottom: 6px;
@@ -310,7 +326,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .categorias .caixas .imagem-caixa img,
-.promocoes-semana .caixas .imagem-caixa img{
+.promocoes-semana .caixas-promo .imagem-caixa img{
     height: 100%;
     width: 100%;
 }
@@ -334,7 +350,7 @@ font-family: 'Poppins', sans-serif;
     transition: linear .5s;
 }
 
-.promocoes-semana .caixas{
+.promocoes-semana .caixas-promo{
     max-width: 350px;
     height: 100%;
     margin-bottom: 6px;
@@ -348,7 +364,7 @@ font-family: 'Poppins', sans-serif;
     padding: 10px;
 }
 
-.promocoes-semana .caixas .nome-produto{
+.promocoes-semana .caixas-promo .nome-produto{
     padding: 2px 0px 10px 0px;
     width: 100%;
     font-size: 20px;
@@ -356,7 +372,7 @@ font-family: 'Poppins', sans-serif;
     color: black;
 }
 
-.promocoes-semana .caixas .porcentagem-desconto{
+.promocoes-semana .caixas-promo .porcentagem-desconto{
     position: absolute;
     font-size: 20px;
     border-radius: 10px;
@@ -368,7 +384,7 @@ font-family: 'Poppins', sans-serif;
     padding: 1px 3px;
 }
 
-.promocoes-semana .caixas .valores{
+.promocoes-semana .caixas-promo .valores{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -376,28 +392,28 @@ font-family: 'Poppins', sans-serif;
     gap: 5px;
 }
 
-.promocoes-semana .caixas .valores .valor-cheio{
+.promocoes-semana .caixas-promo .valores .valor-cheio{
     font-size: 18px;
     color: rgba(128, 128, 128, 0.541);
     text-decoration: line-through;
     font-style: italic;
 }
 
-.promocoes-semana .caixas .valores .valor-desconto{
+.promocoes-semana .caixas-promo .valores .valor-desconto{
     font-size: 30px;
     color: green;
     font-weight: bold;
     font-style: italic;
 }
 
-.promocoes-semana .caixas .valores .valor-cheio .letras, 
-.promocoes-semana .caixas .valores .valor-desconto .letras{
+.promocoes-semana .caixas-promo .valores .valor-cheio .letras, 
+.promocoes-semana .caixas-promo .valores .valor-desconto .letras{
     font-size: 10px;
     margin-right: 10px;
     color: black;
 }
 
-.promocoes-semana .caixas .link-compra{
+.promocoes-semana .caixas-promo .link-compra{
     padding: 10px 20px;
     color: white;
     background-color: green;
@@ -410,13 +426,13 @@ font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
-.promocoes-semana .caixas .mensagem{
+.promocoes-semana .caixas-promo .mensagem{
     font-size: 10px;
     color: red;
     padding: 5px;
 }
 
-.promocoes-semana .caixas .link-compra:hover{
+.promocoes-semana .caixas-promo .link-compra:hover{
     animation: compra-link infinite 2s;
 }
 
@@ -640,6 +656,19 @@ font-family: 'Poppins', sans-serif;
 }
 
 /* ABOUT PAGE END */
+
+/* CATALOG PAGE END */
+
+.catalogo{
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+.catalogo iframe{
+    height: 100vh;  
+}
+
+/* CATALOG PAGE END */
 
 
 

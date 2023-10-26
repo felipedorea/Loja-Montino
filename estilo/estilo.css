@@ -52,13 +52,19 @@ font-family: 'Poppins', sans-serif;
 .whatsapp-icon{
     position: fixed;
     font-size: 3rem;
-    bottom: 0;
-    left: 1%;
-    transition: linear .2s;
+    bottom: 2%;
+    left: 2%;
     z-index: 5;
 }
 
-.whatsapp-icon:hover{
+.whatsapp-icon a i{
+    background-color: #02b502;
+    border-radius: 10%;
+    padding: 10px;
+    transition: linear .2s;
+}
+
+.whatsapp-icon a i:hover{
     font-size: 5rem;
 }
 
@@ -633,8 +639,8 @@ font-family: 'Poppins', sans-serif;
 .about .accordion{
     width: 60%;
     margin: 30px auto;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: transparent;
+    color: black;
     padding: 2px;
     border-radius: 5px;
 }
@@ -645,9 +651,14 @@ font-family: 'Poppins', sans-serif;
     justify-content: space-between;
     font-size: 20px;
     cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.486);
-    padding: 0 10px;
+    border-bottom: 1px solid black;
+    padding: 20px 10px 0px 10px;
     margin: 10px 0;
+    transition: all .3s;
+}
+
+.about .accordion .accordion_container .accordion_title:hover{
+    color: red;
 }
 
 .chevron{
@@ -665,8 +676,9 @@ font-family: 'Poppins', sans-serif;
     background-color: white;
     color: black;
     padding: 10px;
-    border-radius: 5px;
     font-size: 14px;
+    border-bottom: 1px dotted lightgray;
+    text-indent: 20px;
 }
 
 /* ABOUT PAGE END */
@@ -804,6 +816,57 @@ font-family: 'Poppins', sans-serif;
 
 /* PRODUCT SINGLE END */
 
+/* POLITICS */
+
+    .politics{
+        width: 100%;
+        padding: 50px 0px 50px 150px;
+        min-height: 100vh;
+        font-family: 'barlow', sans-serif;
+    }
+
+    .politics .politics-list{
+        list-style-type: decimal;
+    }
+
+    .politics .politics-list .politic-items{
+        padding: 10px 0px;
+    }
+
+    .politics .politics-list .politic-items .politic-title{
+        color: red;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .politics .politics-list .politic-items .politic-answer{
+        text-indent: 30px;
+        text-align: justify;
+        max-width: 70%;
+    }
+
+    .politics .mensagem-final{
+        text-align: center;
+        margin: 50px auto;
+        max-width: 600px;
+        background-color: rgb(209, 209, 209);
+        padding: 15px;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    .politics .mensagem-final i{
+        font-size: 100px;
+        color: rgba(231, 0, 0, 0.185);
+        position: absolute;
+        top: -37%;
+        left: -3%;
+        transform: rotate(22deg);
+    }
+
+
+/* POLITICS END */
+
 
 
 
@@ -932,6 +995,24 @@ font-family: 'Poppins', sans-serif;
     .product-single-container .img-product-single{
         height: 400px;
         margin-bottom: 10px;
+    }
+
+    .politics{
+        padding: 0;
+        text-align: center;
+    }
+
+    .politics .politics-list .politic-items .politic-answer{
+        text-indent: 30px;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+
+    .politics .politics-list .politic-items .politic-title{
+        font-size: 18px;
+        padding: 0px 5px;
     }
 }
 

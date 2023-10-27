@@ -28,6 +28,19 @@ $("#construcao").hover(function(){
     $("#construcao-img").css("filter", "blur()")
 });
 
+$(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    center: true,
+    margin: 2,
+    dots: true,
+    nav: false,
+    autoplayTimeout: 8000,
+    autoplaySpeed: 2000,
+    // autoWidth: false
+});
+
 
 
 

@@ -175,87 +175,38 @@ font-family: 'Poppins', sans-serif;
     margin: 10px auto;
 }
 
-.slogan{
+.carousel .owl-carousel{
+    position: relative;
+}
+
+.carousel .owl-carousel .item img{
+    max-height: 600px;
     width: 90%;
-    display: flex;
     margin: 0 auto;
     position: relative;
 }
 
-.hundred{
-    width: 300%;
-    overflow-x: hidden;
-    position: relative;
-    display: flex;  
-}
-
-.slogan-container{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    flex: none;
-    animation: passar infinite 20s;
-}
-
-@keyframes passar{
-    0%{
-        left: 0%;
-    }
-
-    10%{
-        left: 0%;
-    }
-
-    25%{
-        left: -100%;
-    }
-
-    35%{
-        left: -100%;
-    }
-
-    50%{
-        left: -200%;
-    }
-
-    60%{
-        left: -200%;
-    }
-
-    90%{
-        left: -300%;
-    }
-
-    100%{
-        left: -300%;
-    }
-
-}
-
-.slogan .hundred .slogan-container img{
-    width: 100%;
-    max-height: 600px;
-}
-
-.slogan .hundred .slogan-container .texto-slogan{
+.carousel .owl-carousel .item .texto{
     position: absolute;
     top: 0;
+    left: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    color: white;
 }
 
-.slogan .hundred .slogan-container .texto-slogan h1{
+.carousel .owl-carousel .item .texto h1{
     font-size: 40px;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.445);
 }
 
-.slogan .hundred .slogan-container .texto-slogan p{
+.carousel .owl-carousel .item .texto p{
     text-align: center;
     color: #fff;
     width: 100%;
@@ -263,23 +214,11 @@ font-family: 'Poppins', sans-serif;
     text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.445);
 }
 
-.slogan .hundred .slogan-container .texto-slogan .link-slogan{
-    padding: 5px 10px;
-    color: white;
-    background-color: green;
-    font-size: 18px;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all .3s;
-    font-weight: bold;
-    box-shadow: 2px 3px 8px rgba(1, 201, 1, 0.534);
-}
-
-.slogan .hundred .slogan-container .texto-slogan .link-slogan:hover{
-    background-color: yellow;
-    color: black;
-    box-shadow: 2px 3px 8px rgba(255, 255, 0, 0.534);
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
 }
 
 .titulo-padrao{
@@ -940,16 +879,12 @@ font-family: 'Poppins', sans-serif;
         padding: 20px;
     }
 
-    .slogan{
+    .carousel .owl-carousel .item img{
         width: 100%;
     }
 
-    .slogan .hundred .slogan-container .texto-slogan h1{
+    .carousel .owl-carousel .item .texto h1{
         font-size: 20px;
-    }
-
-    .slogan .hundred .slogan-container .texto-slogan .link-slogan{
-        font-size: 15px;
     }
 
     .footer .up-footer{

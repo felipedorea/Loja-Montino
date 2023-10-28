@@ -650,23 +650,53 @@ font-family: 'Poppins', sans-serif;
         padding: 150px 50px;
         align-items: start;
         background-color: black;
+        gap: 5px;
     }
 
-    .product-single-container .img-product-single {
+    .product-single-container .img-product-single{
+        position: relative;
+        display: flex;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+
+    .product-single-container .img-product-single .img-wrapper {
         width: 500px;
         height: 500px;
         margin-right: 5px;
         display: flex;
-        overflow-x: scroll;
+        overflow-x: hidden;
         scroll-padding: 0px;
-        scroll-snap-type: both mandatory;
+        scroll-snap-type: x mandatory;
         align-items: center;
-        background-color: whitesmoke;
-        box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.288);
-        border-radius: 10px;
+        scroll-behavior: smooth;
+        border-left: 3px solid black;
     }
 
-    .product-single-container .img-product-single img{
+    .product-single-container .img-product-single .nav-btn{
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 5%;
+        z-index: 1;
+        flex-direction: column;
+        height: 100%;
+        padding: 8px;
+    }
+
+    .product-single-container .img-product-single .nav-btn a img{
+        width: 120px;
+        background-color: rgb(224, 224, 224);
+        border-radius: 10px;
+        transition: all .5s linear;
+    }
+
+    .product-single-container .img-product-single .nav-btn a img:hover{
+        background-color: rgb(168, 168, 168);
+    }
+
+    .product-single-container .img-product-single .img-wrapper img{
         width: 100%;
         height: 100%;
         scroll-snap-align: start;
@@ -826,7 +856,6 @@ font-family: 'Poppins', sans-serif;
 
 @media screen and (max-width: 700px){
     .header{
-        position: sticky;
         z-index: 5;
         top: 0;
     }
@@ -924,12 +953,27 @@ font-family: 'Poppins', sans-serif;
     }
 
     .product-single-container{
-        padding: 150px 10px;
+        padding: 40px 10px;
     }
 
     .product-single-container .img-product-single{
-        height: 400px;
         margin-bottom: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .product-single-container .img-product-single .nav-btn{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .product-single-container .img-product-single .nav-btn a img{
+        width: 80px;
+    }
+
+    .product-single-container .img-product-single .img-wrapper{
+        width: 100%;
+        height: 100%;
+        border: none;
     }
 
     .politics{

@@ -406,11 +406,15 @@ font-family: 'Poppins', sans-serif;
     color: black;
 }
 
-.promocoes-semana .caixas-promo .link-compra{
-    padding: 10px 20px;
+.promocoes-semana .caixas-promo .botoes-compra{
+    display: flex;
+    flex-direction: column;
+}
+
+.promocoes-semana .caixas-promo .botoes-compra .link-compra{
+    padding: 5px 10px;
     color: white;
     background-color: green;
-    border: 1px solid white;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
@@ -418,6 +422,25 @@ font-family: 'Poppins', sans-serif;
     transition: all .3s;
     font-weight: bold;
 }
+
+.promocoes-semana .caixas-promo .botoes-compra .link-saber-mais{
+    padding: 5px 10px;
+    color: white;
+    background-color: cornflowerblue;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .3s;
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.promocoes-semana .caixas-promo .botoes-compra .link-saber-mais:hover{
+    background-color: rgb(76, 113, 182);
+}
+
 
 .promocoes-semana .caixas-promo .mensagem{
     font-size: 10px;

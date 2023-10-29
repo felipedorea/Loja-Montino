@@ -206,12 +206,46 @@ font-family: 'Poppins', sans-serif;
     text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.445);
 }
 
+#titulo-carousel-1{
+    animation: slideInLeft;
+    animation-duration: 3s;
+}
+
+#titulo-carousel-2{
+    animation: slideInRight;
+    animation-duration: 3s;
+    animation-delay: 8.4s;
+}
+
+#titulo-carousel-3{
+    animation: slideInDown;
+    animation-duration: 3s;
+    animation-delay: 16.4s;
+}
+
 .carousel .owl-carousel .item .texto p{
     text-align: center;
     color: #fff;
     width: 100%;
     font-size: 20px;
     text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.445);
+}
+
+#subtitulo-carousel-1{
+    animation: slideInUp;
+    animation-duration: 3s;
+}
+
+#subtitulo-carousel-2{
+    animation: slideInUp;
+    animation-duration: 3s;
+    animation-delay: 8.4s;
+}
+
+#subtitulo-carousel-3{
+    animation: slideInUp;
+    animation-duration: 3s;
+    animation-delay: 16.4s;
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {

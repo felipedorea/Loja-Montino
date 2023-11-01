@@ -844,6 +844,21 @@ font-family: 'Poppins', sans-serif;
         margin-top: 3px;
     }
 
+    .product-single-container .valor-produto .comprar-btn-product-single{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .product-single-container .comprar-btn-product-single .ficha-tecnica .ficha-tecnica-btn{
+        padding: 10px 25px;
+        background-color: cornflowerblue;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+
     .product-single-container .valor-produto .comprar-btn-product-single a{
         padding: 10px 25px;
         background-color: #02b502;
@@ -851,6 +866,36 @@ font-family: 'Poppins', sans-serif;
         text-decoration: none;
         font-weight: bold;
         color: white;
+    }
+
+    .modal-detalhes{
+        width: 20%;
+        min-height: 100vh;
+        background-color: #e9e9e9;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        padding: 0px 10px;
+        /* display: none; */
+        transition: 400ms;
+        z-index: 5;
+    }
+
+    .modal-detalhes .fechar-btn{
+        text-align: right;
+        margin-right: 2%;
+        margin-top: 2%;
+        cursor: pointer;
+        color: #9b9b9b;
+    }
+
+    .modal-detalhes h1{
+        margin-bottom: 50px;
+    }
+
+    .modal-detalhes ul li{
+        list-style-type: none;
+        margin-bottom: 10px;
     }
 
 
@@ -1046,6 +1091,15 @@ font-family: 'Poppins', sans-serif;
         width: 100%;
         height: 100%;
         border: none;
+    }
+
+    .product-single-container .valor-produto .comprar-btn-product-single{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .modal-detalhes{
+        width: 100%;
     }
 
     .politics{

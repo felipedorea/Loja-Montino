@@ -718,8 +718,8 @@ font-family: 'Poppins', sans-serif;
     }
 
     .product-single-container .img-product-single .img-wrapper {
-        width: 500px;
-        height: 500px;
+        width: 600px;
+        height: 600px;
         margin-right: 5px;
         display: flex;
         overflow-x: hidden;
@@ -731,22 +731,24 @@ font-family: 'Poppins', sans-serif;
     }
 
     .product-single-container .img-product-single .nav-btn{
-        max-width: 500px;
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        bottom: 5%;
+        justify-content: center;
+        bottom: 0;
         z-index: 1;
-        flex-direction: column;
-        height: 100%;
         padding: 8px;
+        position: absolute;
+        gap: 2%;
     }
 
     .product-single-container .img-product-single .nav-btn a img{
-        width: 120px;
+        width: 80px;
+        height: 80px;
         background-color: rgb(224, 224, 224);
         border-radius: 10px;
         transition: all .5s linear;
+        object-fit: contain;
     }
 
     .product-single-container .img-product-single .nav-btn a img:hover{
@@ -760,8 +762,8 @@ font-family: 'Poppins', sans-serif;
     }
 
     .product-single-container .right-place{
-        width: 500px;
-        height: 500px;
+        width: 600px;
+        height: 600px;
         padding: 0px 30px;
         box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.288);
         border-radius: 10px;
@@ -781,6 +783,18 @@ font-family: 'Poppins', sans-serif;
     .product-single-container .right-place .titulo-produto p{
         font-size: 13px;
         color: lightgray;
+    }
+
+    .product-single-container .right-place .titulo-produto .stars span{
+        font-size: 15px;
+        margin-left: 5px;
+        color: rgb(34, 34, 34);
+    }
+
+    .product-single-container .right-place .titulo-produto .stars i{
+        font-size: 15px;
+        margin-top: 5px;
+        color: rgb(228, 228, 2);
     }
 
     .product-single-container .right-place .descricao-produto{
@@ -1024,7 +1038,8 @@ font-family: 'Poppins', sans-serif;
     }
 
     .product-single-container .img-product-single .nav-btn a img{
-        width: 80px;
+        width: 50px;
+        height: 50px;
     }
 
     .product-single-container .img-product-single .img-wrapper{
